@@ -1,0 +1,12 @@
+BuscaPalabras
+=============
+
+Pedro Reina, L.28.10.2002
+
+Utilizo una base de datos PostgreSQL llamada ciflet, con usuario pedro.
+Tiene dos tablas para almacenar las consultas y cinco que contienen
+las claves y las palabras.
+
+CREATE TABLE palabra5 (clave CHAR(5), palabra CHAR(5));
+
+COPY palabra5 FROM 'palabra5.txt' USING DELIMITERS ',';
